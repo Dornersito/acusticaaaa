@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  ul li:hover {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  #track-features {
+    margin-top: 20px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  #search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .album-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  #loading-status {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .prediction-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffe7b3;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: left;
+    color: #333;
+  }
+  
+  .prediction-result h3 {
+    margin-top: 0;
+  }
+  
+  .emotion {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  .sad { background-color: #ffc2c2; color: #a33a3a; }
+  .happy { background-color: #ffeec2; color: #d9a034; }
+  .energetic { background-color: #c2ffeb; color: #32a388; }
+  .calm { background-color: #c2e7ff; color: #1e81d3; }
+  
+  .error-message {
+    color: red;
+    margin-top: 20px;
+  }
+  
+  /* Barras de probabilidad */
+  .probability-bars {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .probability-bar {
+    position: relative;
+    height: 20px;
+  }
+  
+  .probability-text {
+    position: absolute;
+    right: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  
+  .probability-bar-container {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .probability-label {
+    width: 80px;
+    text-align: right;
+    font-weight: bold;
+  }
+  .probability-bar-wrapper {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .probability-bar {
+    height: 100%;
+    border-radius: 10px;
+  }
+  .probability-value {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9em;
+  }
+  .sad-bar { background-color: #ff9999; }
+  .happy-bar { background-color: #ffff99; }
+  .energetic-bar { background-color: #99ffcc; }
+  .calm-bar { background-color: #99ccff; }
+
+  
+  .hidden {
+    display: none;
+  }
+  
+  .toggle-button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Carga en spinner */
+  .loading-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #007bff;
+    margin-top: 20px;
+  }
+
+  .spinner {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    border: 4px solid rgba(0, 123, 255, 0.3);
+    border-top-color: #007bff;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  
+  .features-container {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: #ffe7b3;
+  }
+  
+  .main-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+  }
+  
+  .secondary-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .feature-label {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 5px;
+  }
+  
+  .feature-value {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  
+  .toggle-button {
+    background: #ff6b6b;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .toggle-button:hover {
+    background: #b54e4e;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+    /* Centrar el contenedor del reproductor de audio */
+  .audio-player {
+    display: flex;
+    justify-content: center; /* Centrará horizontalmente */
+    margin-top: 15px;
+  }
+
+  /* Opcional: Puedes ajustar el ancho del reproductor para que no ocupe todo el ancho */
+  .audio-player audio {
+    width: 100%;
+    max-width: 300px; /* Ajusta según el tamaño deseado */
+  }

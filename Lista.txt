@@ -1,0 +1,26 @@
+
+
+Tareas
+1. definir bien la metodologia
+2. Buscar datasets 
+3. Crear archivo python
+4. abrir dataset en python
+5. probar modelos de aprendizaje
+6. Analizar resultados
+7. Elegir modelo
+8. ajustar parametros (entrenamiento, test, etc)
+ 
+En curso
+1.definir la metodologia
+3.Crear archivo en python
+4. abrir dataset en python
+
+Terminadas
+2.Buscar dataset
+
+
+
+Posibles datasets:
+- https://www.kaggle.com/datasets/jocelyndumlao/music-and-animal-basic-emotions (Anger, Fear, happiness, Interest, Sadness)
+- https://www.kaggle.com/datasets/kingofarmy/musical-emotions-classification (happy and sad)
+- 

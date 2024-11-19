@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emociones en canciones</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ffe7b3, #ffd3e0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background-color: #fff;
+      padding: 2.5em;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      color: #ff6b6b;
+      margin-bottom: 1.2em;
+    }
+    #search {
+      width: 100%;
+      padding: 1em;
+      margin-bottom: 1.2em;
+      border: 2px solid #ffd3e0;
+      border-radius: 8px;
+      font-size: 1.1em;
+      transition: border-color 0.3s;
+    }
+    #search:focus {
+      border-color: #ff6b6b;
+      outline: none;
+    }
+    #suggestions {
+      list-style-type: none;
+      padding: 0;
+      margin: 1em 0;
+      border-top: 1px solid #ffd3e0;
+    }
+    #suggestions li {
+      padding: 0.8em;
+      font-size: 1em;
+      color: #555;
+      background-color: #fff3f3;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      border-bottom: 1px solid #ffd3e0;
+    }
+    #suggestions li:hover {
+      background-color: #ffefef;
+    }
+    #get-features {
+      padding: 0.9em 2em;
+      font-size: 1.1em;
+      color: #fff;
+      background-color: #ff6b6b;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    #get-features:disabled {
+      background-color: #ffc2c2;
+      cursor: not-allowed;
+    }
+    #get-features:not(:disabled):hover {
+      background-color: #e65c5c;
+      transform: scale(1.05);
+    }
+    #track-features {
+      margin-top: 1.5em;
+      text-align: left;
+      font-size: 1em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¿Qué emociones produce...?</h1>
+    <input type="text" id="search" placeholder="Escribe el nombre de una canción..." />
+    <ul id="suggestions">
+      <!-- Aquí se mostrarán todas las sugerencias sin scroll -->
+    </ul>
+    <button id="get-features" disabled>Descubre las emociones</button>
+    <div id="track-features"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
